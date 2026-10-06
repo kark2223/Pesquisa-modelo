@@ -12,7 +12,7 @@
     </header>
     <section>
         <form action="" method="get">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Dados Pessoais</legend>
             <label for="userName">Nome:</label>
             <input type="text" id="userName" name="userName" required><br><br>
@@ -25,24 +25,26 @@
 
             <label for="birthDate">Data de Nascimento:</label>
             <input type="date" id="birthDate" name="birthDate"><br><br>
-            
-            <label for="genero">Gênero:</label>
-            <select id="genero" name="genero" required>
-                <option value="">Selecione</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outro">Outro</option>
-            </select><br><br>
 
             <label for="userPhoneNumber" >Telefone:</label>
             <input type="tel" id="userPhoneNumber" name="userPhoneNumber" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="XX-XXXXX-XXXX" maxlength="13" required><br><br>
 
             <label type="file" for="userImage">Upload de foto:</label>
             <input type="file" id="userImage" name="userImage" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+        </fieldset> -->
 
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Prefiro não informar</option>
+            </select><br><br>
 
-            <input type="submit" value="Enviar">
-        </fieldset>
+        <input type="submit" value="Enviar">
+    </fieldset>
         </form>
     </section> 
 </body>
