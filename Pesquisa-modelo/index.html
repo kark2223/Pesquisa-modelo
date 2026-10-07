@@ -117,18 +117,27 @@
             <input type="color" id="color" name="UserFColor"><br><br>
             <p>Satisfação:</p>
             <input type="radio" id="otimo" name="UserSatisfaction" value="otimo">
-            <Label for="otimo">Ótimo</label>
+            <Label for="otimo">Ótimo</label><br>
             <input type="radio" id="bom" name="UserSatisfaction" value="bom">
-            <Label for="bom">Bom</label>
+            <Label for="bom">Bom</label><br>
             <input type="radio" id="regular" name="UserSatisfaction" value="regular">
-            <Label for="regular">Regular</label>
+            <Label for="regular">Regular</label><br>
             <input type="radio" id="ruim" name="UserSatisfaction" value="ruim">
-            <Label for="ruim">Ruim</label>
+            <Label for="ruim">Ruim</label><br>
             <input type="radio" id="pessimo" name="UserSatisfaction" value="pessimo">
             <Label for="pessimo">Péssimo</label><br><br>
             
             <label for="comentarios">Comentários:</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+            <fieldset>
+                <legend>Confirmações</legend>
+
+                <input type ="checkbox" id="UserTerms" name="UserGetTerms" value="Aceito" required>
+                <label for="UserTerms">Aceito os termos e condições</label><br>
+                <input type="checkbox"  id="getResult" name="getResult" value="Aceito" required>
+                <label for="getResult">Aceito receber o resultado da pesquisa por E-mail</label><br>
+            </fieldset>
 
 </fieldset>
 <input type="submit" value="Enviar">
