@@ -12,7 +12,7 @@
     </header>
     <section>
         <form action="" method="get">
-            <!-- <fieldset>
+             <fieldset>
                 <legend>Dados Pessoais</legend>
             <label for="userName">Nome:</label>
             <input type="text" id="userName" name="userName" required><br><br>
@@ -88,7 +88,7 @@
             <input type="text" id="UserCity" name="UserCity" required><br><br>
 
         
-    </fieldset> -->
+    </fieldset>
 <fieldset>
     <legend>Hábitos</legend>
             <p>Redes Sociais:</p>
@@ -129,18 +129,19 @@
             
             <label for="comentarios">Comentários:</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-
+</fieldset>
             <fieldset>
                 <legend>Confirmações</legend>
 
-                <input type ="checkbox" id="UserTerms" name="UserGetTerms" value="Aceito" required>
+                <input type ="checkbox" id="UserTerms" name="UserGetTerms" placeholder="Digite aqui..." value="Aceito" required>
                 <label for="UserTerms">Aceito os termos e condições</label><br>
                 <input type="checkbox"  id="getResult" name="getResult" value="Aceito" required>
                 <label for="getResult">Aceito receber o resultado da pesquisa por E-mail</label><br>
             </fieldset>
 
-</fieldset>
+
 <input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
         </form>
     </section> 
 </body>
