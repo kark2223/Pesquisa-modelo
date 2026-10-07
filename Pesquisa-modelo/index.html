@@ -12,7 +12,7 @@
     </header>
     <section>
         <form action="" method="get">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Dados Pessoais</legend>
             <label for="userName">Nome:</label>
             <input type="text" id="userName" name="userName" required><br><br>
@@ -25,24 +25,98 @@
 
             <label for="birthDate">Data de Nascimento:</label>
             <input type="date" id="birthDate" name="birthDate"><br><br>
-            
-            <label for="genero">Gênero:</label>
-            <select id="genero" name="genero" required>
-                <option value="">Selecione</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outro">Outro</option>
-            </select><br><br>
 
             <label for="userPhoneNumber" >Telefone:</label>
             <input type="tel" id="userPhoneNumber" name="userPhoneNumber" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="XX-XXXXX-XXXX" maxlength="13" required><br><br>
 
             <label type="file" for="userImage">Upload de foto:</label>
             <input type="file" id="userImage" name="userImage" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+        </fieldset> 
 
+    <fieldset>
+        <legend>Perfil</legend>
+        <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Prefiro não informar</option>
+            </select><br><br>
 
-            <input type="submit" value="Enviar">
-        </fieldset>
+        <label for="maritalStatus" >Estado Civil:</label>
+            <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">Selecione</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viuvo">Viúvo(a)</option>
+            </select><br><br>
+
+        <label for="UserState" >Estado:</label>
+            <select id="UserState" name="UserState" required>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option> 
+            </select><br><br>
+
+            <label for="UserCity">Cidade:</label>
+            <input type="text" id="UserCity" name="UserCity" required><br><br>
+
+        
+    </fieldset> -->
+<fieldset>
+    <legend>Hábitos</legend>
+            <p>Redes Sociais:</p>
+            <input type="checkbox" id="UserFacebook" name="UserSocialMedia" value="facebook">
+            <label for="UserFacebook">Facebook</label><br>
+            <input type="checkbox" id="UserX" name="UserSocialMedia" value="X">
+            <label for="UserX">X</label><br>
+            <input type="checkbox" id="UserInstagram" name="UserSocialMedia" value="instagram">
+            <label for="UserInstagram">Instagram</label><br>
+            <input type="checkbox" id="UserLinkedIn" name="UserSocialMedia" value="linkedin">
+            <label for="UserLinkedIn">LinkedIn</label><br>
+            <label for="musicStyle">Estilo Musical:</label>
+            <input list="styleTypes" name="musicStyle" id="musicStyle" placeholder="Selecione um estilo musical">
+            
+            <datalist id="styleTypes">
+                <option value="Rock">
+                <option value="Pop">
+                <option value="Funk">
+                <option value="Eletrônica">
+                <option value="Hip Hop">
+                <option value="Forró">
+                <option value="Sertanejo">
+                <option value="Samba">
+            </datalist><br>
+            <label for="color">Cor favorita:</label>
+            <input type="color" id="color" name="UserFColor"><br><br>
+</fieldset>
+<input type="submit" value="Enviar">
         </form>
     </section> 
 </body>
