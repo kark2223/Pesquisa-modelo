@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Form_icon.png" type="image/png">
-    <title>Document</title>
+    <link rel="icon" href="culturama-favico.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Pesquisa Culturama</title>
 </head>
 <body>
+    <main>
    <header>
-        <h1>Pesquisa Modelo</h1>
+        <img src="img/logo-culturama.png" alt="Logo Culturama" width="200">
+        <h1>Pesquisa</h1>
     </header>
     <section>
         <form action="" method="get">
@@ -91,7 +97,7 @@
     </fieldset>
 <fieldset>
     <legend>Hábitos</legend>
-            <p>Redes Sociais:</p>
+            <p>Redes Sociais:</p><br>
             <input type="checkbox" id="UserFacebook" name="UserSocialMedia" value="facebook">
             <label for="UserFacebook">Facebook</label><br>
             <input type="checkbox" id="UserX" name="UserSocialMedia" value="X">
@@ -114,8 +120,8 @@
                 <option value="Samba">
             </datalist><br>
             <label for="color">Cor favorita:</label>
-            <input type="color" id="color" name="UserFColor"><br><br>
-            <p>Satisfação:</p>
+            <input type="color" id="color" name="UserFColor">
+            <p>Satisfação:</p><br>
             <input type="radio" id="otimo" name="UserSatisfaction" value="otimo">
             <Label for="otimo">Ótimo</label><br>
             <input type="radio" id="bom" name="UserSatisfaction" value="bom">
@@ -140,9 +146,11 @@
             </fieldset>
 
 
-<input type="submit" value="Enviar">
-<input type="reset" value="Limpar">
+  <input type="submit" value="Enviar" formaction="sucesso.html">
+  <input type="reset" value="Limpar">
+</form>
         </form>
     </section> 
+</main>
 </body>
 </html>
